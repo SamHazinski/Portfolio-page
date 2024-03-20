@@ -32,24 +32,68 @@ a {
 .banner{
     height: 895px;
     width: 100%;
-    /* margin-bottom: 25px; */
     background-image: url(../asiansmallclawedotter-002_0.jpg);
     background-size: 100%;
     background-position: cover;
 }
-/* .float-left {
-    float: left;
-    margin-right: 25px;
-}
-.float-right {
-    float: right;
-    margin-left: 25px;
-} */
-.content {
+
+.content{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    /* height: 100px;
+    width: 100px; */
+}
+.row{
+    display:flex
+    
+}
+
+.column{
+    background-color: grey;
+    padding: 1rem 0;
+    flex: 1;
+    height: 400px;
+    width: 400px;
+}
+.big:hover{
+    box-shadow: inset 0px 0px 8px #c5bdf0, 0 0 15px #c5bdf0;
+}
+.big {
+    width: 800px;
+    height: 800px;
+    background-image: url(../lightning-dragon.jpg);
+}
+.one{
+    background-image: url(../placeholder-one.jpg);
+    
+}
+.one:hover{
+    box-shadow: inset 0px 0px 8px #c5bdf0, 0 0 15px #c5bdf0;
+}
+.two{
+    background-image: url(../placeholder-two.jpg);
+    
+}
+.two:hover{
+    box-shadow: inset 0px 0px 8px #c5bdf0, 0 0 15px #c5bdf0;
+}
+.three{
+    background-image: url(../placeholder-three.jpg);
+    
+}
+.three:hover{
+    box-shadow: inset 0px 0px 8px #c5bdf0, 0 0 15px #c5bdf0;
+}
+.four{
+    background-image: url(../placeholder-four.jpg);
+    
+}
+.four:hover{
+    box-shadow: inset 0px 0px 8px #c5bdf0, 0 0 15px #c5bdf0;
 }
 
 
@@ -60,13 +104,7 @@ main{
 main h1{
     text-align: center;
 }
-article{
-    /*border to know where I am */
-    width: 75%;
-    height: 200px;
-    border: 10px solid red;
-    align-items: center;
-}
+
 .headings{
     margin-right: 20px;
     padding: 20px;
@@ -105,22 +143,10 @@ footer div ul li {
     
 }
 
-
-/* @media screen and (min-width: 768px){
-    .content{
-        flex: 0 0 50%;
-         max-width: 50%; 
+@media screen and (max-width: 768px) {
+    .row {flex-wrap: wrap;
+    }
+    .column {
+        flex-basis: 100%;
     }
 }
-@media screen and (min-width: 992px){
-    /* header{
-        width: 75%;
-    }
-    footer{
-        width: 75%;
-    } 
-    .content{
-        flex: 0 0 33.333%;
-         max-width: 33.333%; 
-    }
-} */
